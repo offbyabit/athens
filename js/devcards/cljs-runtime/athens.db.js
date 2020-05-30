@@ -17,13 +17,13 @@ athens.db.parse_hms = (function athens$db$parse_hms(hms){
 if((!(cljs.core.coll_QMARK_(hms)))){
 return hms;
 } else {
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__48478_SHARP_){
-return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (acc,p__48479){
-var vec__48480 = p__48479;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48480,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48480,(1),null);
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__60304_SHARP_){
+return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (acc,p__60305){
+var vec__60306 = p__60305;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__60306,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__60306,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(acc,athens.db.convert_key(k),(athens.db.parse_hms.cljs$core$IFn$_invoke$arity$1 ? athens.db.parse_hms.cljs$core$IFn$_invoke$arity$1(v) : athens.db.parse_hms.call(null,v)));
-}),cljs.core.PersistentArrayMap.EMPTY,p1__48478_SHARP_);
+}),cljs.core.PersistentArrayMap.EMPTY,p1__60304_SHARP_);
 }),hms);
 }
 });
@@ -31,10 +31,10 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(acc,athens.db.convert_key(k
  * Parse tuples exported via method specified in https://roamresearch.com/#/app/ego/page/eJ14YtH2G.
  */
 athens.db.parse_tuples = (function athens$db$parse_tuples(tuples){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__48484_SHARP_){
-return cljs.core.cons(new cljs.core.Keyword("db","add","db/add",235286841),p1__48484_SHARP_);
-}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__48483_SHARP_){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.edn.read_string,p1__48483_SHARP_);
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__60310_SHARP_){
+return cljs.core.cons(new cljs.core.Keyword("db","add","db/add",235286841),p1__60310_SHARP_);
+}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__60309_SHARP_){
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.edn.read_string,p1__60309_SHARP_);
 }),cljs.core.rest(cljs.core.partition.cljs$core$IFn$_invoke$arity$2((3),tuples))));
 });
 /**

@@ -1,16 +1,17 @@
 goog.provide('athens.devcards.left_sidebar');
 goog.require('cljs.core');
 goog.require('athens.db');
-goog.require('cljsjs.react');
-goog.require('cljsjs.react.dom');
-goog.require('cljs.core.async');
-goog.require('devcards.core');
-goog.require('reagent.core');
-goog.require('posh.reagent');
-goog.require('datascript.core');
-goog.require('cljs_http.client');
 goog.require('athens.style');
+goog.require('cljs_http.client');
+goog.require('cljs.core.async');
+goog.require('cljsjs.react.dom');
+goog.require('cljsjs.react');
+goog.require('datascript.core');
+goog.require('devcards.core');
+goog.require('posh.reagent');
+goog.require('reagent.core');
 athens.devcards.left_sidebar.log = console.log;
+(athens.devcards.left_sidebar.log.cljs$core$IFn$_invoke$arity$1 ? athens.devcards.left_sidebar.log.cljs$core$IFn$_invoke$arity$1("hi") : athens.devcards.left_sidebar.log.call(null,"hi"));
 athens.devcards.left_sidebar.trace = (function athens$devcards$left_sidebar$trace(x){
 (athens.devcards.left_sidebar.log.cljs$core$IFn$_invoke$arity$1 ? athens.devcards.left_sidebar.log.cljs$core$IFn$_invoke$arity$1(x) : athens.devcards.left_sidebar.log.call(null,x));
 
